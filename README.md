@@ -18,7 +18,7 @@ You have the following installed on your machine
      $ cd cmd/main/
 
 ### Build the binary and run:
-    $ go build main.go -o main
+    $ go build main.go
     $ ./main
 
 ### To get demo:
