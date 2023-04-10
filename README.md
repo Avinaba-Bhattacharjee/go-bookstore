@@ -20,3 +20,7 @@ You have the following installed on your machine
 ### Build the binary and run:
     $ go build main.go -o main
     $ ./main
+
+### To get demo:
+
+ use postman [Note: Don't forget to change username and password in pkg/config/app.go file with your mysql username and password before testing] 
