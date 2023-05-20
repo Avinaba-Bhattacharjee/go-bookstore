@@ -1,0 +1,18 @@
+FROM golang:1.20
+
+WORKDIR /app
+
+COPY go.mod go.sum ./
+
+RUN go mod download
+
+COPY . .
+
+RUN CGO_ENABLED=0 GOOS=linux go build -o ./go-bookstore-crud ./cmd/main/main.go
+
+EXPOSE 9010
+
+CMD ["./go-bookstore-crud"]
+
+
+
